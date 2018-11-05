@@ -10,7 +10,7 @@
 #include <math.h>
 #define N 3 //行列の次数//
 #define EPSILON 1.0E-5
-int jacobi(double a[][N],double b[],double x[],int k);      //計算用//
+void jacobi(double a[][N],double b[],double x[],int k);      //計算用//
 int main(void)
 {
     double a[N][N] = {{5.0, 2.0, 1.0},{1.0, 4.0, 2.0},{2.0, 1.0, 4.0}}; //行列の初期設定//
@@ -42,7 +42,7 @@ int main(void)
 }
 
 
-int jacobi(double a[][N],double b[],double x[],int k)
+void jacobi(double a[][N],double b[],double x[],int k)
 {
     int i,j;
     double Nk,xx,xdif;
@@ -81,5 +81,4 @@ int jacobi(double a[][N],double b[],double x[],int k)
     
     }
     while(Nk > EPSILON);
-    return 0;
 }
