@@ -1,5 +1,5 @@
 //
-//  row reduction.c
+//  main.c
 //  row reduction
 //
 //  Created by YoshiharaNaoki on 2018/10/12.
@@ -129,3 +129,4 @@ int *sw;
             det = p * det;
             owari:;
 }
+//どうでもいいけど何故授業ではグローバル変数ダメなのか...これはグローバル変数で作ったが()
